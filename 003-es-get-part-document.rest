@@ -1,0 +1,1 @@
+GET http://localhost:9200/books/elasticsearch/1?_source=name,author
