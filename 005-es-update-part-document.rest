@@ -1,0 +1,5 @@
+POST http://localhost:9200/books/elasticsearch/1/_update
+
+{
+    "script" : "ctx._source.update_time=\"2015-09-09T00:00:00\""
+}

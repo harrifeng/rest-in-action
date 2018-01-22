@@ -1,0 +1,9 @@
+PUT http://localhost:9200/books/elasticsearch/1
+
+{
+    "name" : "Elasticsearch Essentials",
+    "author": "Bharvi Dixit",
+    "tags" : ["Data Analytics", "Text Search", "Elasticsearch"],
+    "content" : "Added with PUT request",
+    "publisher": "pact-pub"
+}
