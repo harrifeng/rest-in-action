@@ -1,0 +1,26 @@
+# -*- restclient -*-
+PUT http://localhost/index_name/_settings
+
+{
+    "analysis" : {
+       "analyzer" : {
+         "default" : {
+           "filter" : [
+             "standard",
+             "lowercase",
+             "asciifolding"
+           ],
+           "type": "custom",
+           "tokenizer": "keyword"
+         }
+       },
+       "keyword_tokenizer" : {
+         "filter" : [
+           "lowercase",
+           "asciifolding"
+         ],
+         "type" : "custom",
+         "tokenizer" : "keyword"
+       }
+    }
+}

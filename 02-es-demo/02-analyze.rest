@@ -1,0 +1,1 @@
+GET http://localhost:9200/test/_analyze?analyzer=whitespace&text=testing,Analyzers
